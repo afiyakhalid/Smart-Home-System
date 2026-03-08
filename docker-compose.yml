@@ -9,13 +9,13 @@ services:
 
   db:
     image: postgres:16
-    container_name: postgres
+    container_name: postgress
     environment:
       POSTGRES_USER: smarthome
       POSTGRES_PASSWORD: smarthome
       POSTGRES_DB: smarthome
     ports:
-      - "5432:5432"
+      - "5433:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
 
